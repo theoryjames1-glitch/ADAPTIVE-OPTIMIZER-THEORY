@@ -8,9 +8,6 @@
 ## 📊 Architecture Diagram
 
 ```mermaid
-## 📊 Architecture Diagram
-
-```mermaid
 flowchart LR
     subgraph TrainLoop[Training Loop]
         L[Compute Loss] --> B[Backward Pass]
@@ -31,8 +28,8 @@ flowchart LR
     style AdaptiveLayer fill:#f9f,stroke:#333,stroke-width:1px
     style Optimizer fill:#bbf,stroke:#333,stroke-width:1px
     style TrainLoop fill:#bfb,stroke:#333,stroke-width:1px
-
 ```
+
 ## 🚀 Motivation
 
 Deep learning training relies heavily on optimizers such as **AdamW**, **SGD**, **RMSprop**, or **Adagrad**. These optimizers have fixed hyperparameters (learning rate, momentum, betas, alpha, weight decay) that are usually **hand-tuned** or controlled by schedulers.
